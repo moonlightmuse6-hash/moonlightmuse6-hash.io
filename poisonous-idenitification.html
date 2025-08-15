@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poisonous Flower Identification</title>
+    <link rel="stylesheet" href="P-I-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Poisonous Flower Identification</h1>
+        <p class="subtitle">Check all symptoms and characteristics you've observed:</p>
+        
+        <div class="checklist">
+            <h3>Symptoms:</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="symptom1" name="symptoms" value="skin_irritation">
+                <label for="symptom1">Skin irritation/rash</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="symptom2" name="symptoms" value="nausea">
+                <label for="symptom2">Nausea or vomiting</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="symptom3" name="symptoms" value="dizziness">
+                <label for="symptom3">Dizziness</label>
+            </div>
+            
+            <h3>Flower Characteristics:</h3>
+            <div class="checklist-item">
+                <input type="checkbox" id="char1" name="characteristics" value="white_flowers">
+                <label for="char1">White flowers</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="char2" name="characteristics" value="bell_shaped">
+                <label for="char2">Bell-shaped flowers</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="char3" name="characteristics" value="berries">
+                <label for="char3">Has berries</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="char4" name="characteristics" value="milky_sap">
+                <label for="char4">Milky sap when broken</label>
+            </div>
+        </div>
+        
+        <button id="identify-btn">Identify Possible Flowers</button>
+        
+        <div id="results" class="results-container">
+            <div id="emergency-warning" class="emergency-warning hidden">
+                <h3>⚠️ Emergency Warning ⚠️</h3>
+                <p>Based on your symptoms, seek medical attention immediately!</p>
+            </div>
+            <div id="possible-flowers"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
